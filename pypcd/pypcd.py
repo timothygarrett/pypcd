@@ -551,7 +551,7 @@ def make_xyz_rgb_point_cloud(xyz_rgb, metadata=None):
           'height': 1,
           'viewpoint': [0.0, 0.0, 0.0, 1.0, 0.0, 0.0, 0.0],
           'points': len(xyz_rgb),
-          'type': ['F', 'F', 'F', 'F'],
+          'type': ['F', 'F', 'F', 'U'],
           'size': [4, 4, 4, 4],
           'data': 'binary'}
     if xyz_rgb.dtype != np.float32:
