@@ -580,7 +580,7 @@ def encode_rgb_for_pcl(rgb):
     rgb = rgb.astype(np.uint32)
     rgb = np.array((rgb[:, 0] << 16) | (rgb[:, 1] << 8) | (rgb[:, 2] << 0),
                    dtype=np.uint32)
-    rgb.dtype = np.float32
+    rgb = rgb.astype(np.float32)
     return rgb
 
 
